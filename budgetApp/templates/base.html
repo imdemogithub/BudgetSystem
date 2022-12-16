@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- load static tag to target all static files (css, js, images) -->
+    {% load static %} 
+
+<!-- Mirrored from demo.neptuneapp.xyz/demo-14/ltr/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Aug 2022 10:40:18 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>{{current_page}} Neptune Admin Dashboard 1 | Neptune - Multipurpose Bootstrap Admin Dashboard Template </title>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}"/>
+    <!-- Common Styles Starts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'assets/css/structure.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'plugins/perfect-scrollbar/perfect-scrollbar.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'plugins/highlight/styles/monokai-sublime.css' %}" rel="stylesheet" type="text/css" />
+    <!-- Common Styles Ends -->
+    <!-- Common Icon Starts -->
+    <link rel="stylesheet" href="{% static 'fonts/line-awesome.min.css' %}">
+    <!-- Common Icon Ends -->
+    <!-- Page Level Plugin/Style Starts -->
+    <link href="{% static 'assets/css/loader.css' %}" rel="stylesheet" type="text/css" />  
+    {% if current_page not in no_header_pages %}
+    <link href="{% static 'plugins/apex/apexcharts.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/dashboard/dashboard_1.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'plugins/flatpickr/flatpickr.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'plugins/flatpickr/custom-flatpickr.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/elements/tooltip.css' %}" rel="stylesheet" type="text/css" />
+    <!-- Page Level Plugin/Style Ends -->
+    {% endif %}
+
+    {% block css %}
+    {% endblock %}
+</head>
+<body class="{{current_page}}">
+    <!-- Loader Starts -->
+    <div id="load_screen"> 
+        <div class="boxes">
+            <div class="box">
+                <div></div><div></div><div></div><div></div>
+            </div>
+            <div class="box">
+                <div></div><div></div><div></div><div></div>
+            </div>
+            <div class="box">
+                <div></div><div></div><div></div><div></div>
+            </div>
+            <div class="box">
+                <div></div><div></div><div></div><div></div>
+            </div>
+        </div>
+    </div>
+    <!--  Loader Ends -->
+    
+
+    {% block main_content %}
+    {% endblock %}
+
+    <!-- Common Script Starts -->
+    <script src="{% static 'assets/js/libs/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'plugins/perfect-scrollbar/perfect-scrollbar.min.js' %}"></script>
+    <script src="{% static 'assets/js/app.js' %}"></script>
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
+    </script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <!-- Common Script Ends -->
+    <!-- Page Level Plugin/Script Starts -->
+    <script src="{% static 'assets/js/loader.js' %}"></script>
+    <script src="{% static 'plugins/apex/apexcharts.min.js' %}"></script>
+    <script src="{% static 'plugins/flatpickr/flatpickr.js' %}"></script>
+    <script src="{% static 'assets/js/dashboard/dashboard_1.js' %}"></script>
+    <!-- Page Level Plugin/Script Ends -->
+
+    {% block js %}
+    {% endblock %}
+</body>
+
+<!-- Mirrored from demo.neptuneapp.xyz/demo-14/ltr/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Aug 2022 10:42:28 GMT -->
+</html>
